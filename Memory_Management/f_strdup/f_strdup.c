@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int	ft_strlen(char *str)
+int	f_strlen(char *str)
 {
 	int	i;
 
@@ -11,14 +11,14 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-char	*ft_strdup(char *src)
+char	*f_strdup(char *src)
 {
 	int		i;
 	char	*dest;
 
 	if (!src)
 		return (NULL);
-	dest = malloc(ft_strlen(src) * sizeof(char) + 1);
+	dest = malloc(f_strlen(src) * sizeof(char) + 1);
 	if (!dest)
 		return (NULL);
 	i = 0;
@@ -30,12 +30,12 @@ char	*ft_strdup(char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
+
 int main()
 {
 	char src[] = "This is a test";
 //	char src1[] = "\0";
-	char *dest = ft_strdup(src);
+	char *dest = f_strdup(src);
 	printf("%s\n", dest);
 }
-*/
+
