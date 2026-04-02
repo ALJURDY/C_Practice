@@ -3,9 +3,7 @@
 
 int	f_strlen(char *str)
 {
-	int	i;
-
-	i = 0;
+	int i = 0;
 	while (str[i] != '\0')
 		i++;
 	return (i);
@@ -13,7 +11,7 @@ int	f_strlen(char *str)
 
 char	*f_strdup(char *src)
 {
-	int		i;
+	int	i;
 	char	*dest;
 
 	if (!src)
