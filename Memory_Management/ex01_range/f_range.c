@@ -26,5 +26,6 @@ int	main()
 		printf("%d",str[i]);
 		i++;
 	}
-	printf("\n");}
+	printf("\n");
+}
 
